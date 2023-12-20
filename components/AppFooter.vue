@@ -4,7 +4,7 @@
         <!-- social icons -->
         <div class="w-full flex justify-between md:justify-start">
             <span id="social-title" class="h-full flex justify-center items-center border-right px-5">
-                find me in:
+                me trouver sur:
             </span>
             <div id="social-icons" class="flex">
                 <NuxtLink :to="social.instagram.url + social.instagram.user" target="_blank" class="flex justify-center items-center">

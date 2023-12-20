@@ -23,7 +23,7 @@
   
         <div v-for="tech in techs" :key="tech" class="flex items-center py-2">
           <input type="checkbox" :id="tech" @click="filterProjects(tech)">
-          <img :id="'icon-tech-' + tech" :src="'/icons/techs/' + tech + '.svg'" alt="" class="tech-icon w-5 h-5 mx-4">
+          <img :id="'icon-tech-' + tech" :src="'/icons/techs/' + tech.toLowerCase()+'.svg'" alt="" class="tech-icon w-5 h-5 mx-4">
           <span :id="'title-tech-' + tech">{{ tech }}</span>
         </div>
       </nav>
@@ -66,16 +66,16 @@
         <div id="project" v-for="(project, key, index) in projects" :key="key" class="lg:mx-5">
           <!-- title -->
           <span class="flex text-sm my-3">
-            <h3 v-if="index == null" class="text-purplefy font-fira_bold mr-3">Project {{ key + 1 }}</h3>
-            <h3 v-else class="text-purplefy font-fira_bold mr-3">Project {{ index + 1 }}</h3>
-            <h4 class="font-fira_retina text-menu-text"> // {{ project.title }}</h4>
+            <h3 v-if="index == null" class="text-purplefy font-fira_bold mr-3"> {{ project.title }}</h3>
+            <h3 v-else class="text-purplefy font-fira_bold mr-3"> {{ project.title }}</h3>
+            <!-- <h4 class="font-fira_retina text-menu-text"> // {{ project.title }}</h4> -->
           </span>
 
           <!-- info -->
           <div id="project-card" class="flex flex-col">
             <div id="window">
               <div class="absolute flex right-3 top-3">
-                <img v-for="tech in project.tech" :key="tech" :src="'/icons/techs/filled/' + tech + '.svg'" alt="" class="w-6 h-6 mx-1 hover:opacity-75">
+                <img v-for="tech in project.tech" :key="tech" :src="'/icons/techs/filled/' + tech.toLowerCase() + '.svg'" alt="" class="w-6 h-6 mx-1 hover:opacity-75">
               </div>
               <img id="showcase" :src="project.img" alt="" class="">
             </div>
@@ -254,7 +254,7 @@ export default {
   },
   data() {
     return {
-      techs: ['React', 'HTML', 'CSS', 'Vue', 'Angular', 'Gatsby', 'Flutter'],
+      techs: ['NuxtJs','Laravel', 'Flutter' , 'Symfony'],
       filters: ['all'],
       projects: '',
       loading: true,

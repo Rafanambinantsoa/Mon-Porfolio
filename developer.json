@@ -10,7 +10,7 @@
                 "info": {
                     "experience": {
                         "title": "experience",
-                        "description": "<br>UN-IT Fianarantsoa , <br> Pendant mon stage à UN-IT FIanarantsoa en tant que développeur junior, <br> j'ai créé une appli web pour la vente de billets et une app mobile pour le <br>  scan à l'entrée. Ces réalisations ont été cruciales pour valider mon diplôme <br>  de licence en info, enrichissant ma formation théorique par une expérience <br> pratique approfondie. <br><br>  Direction Régionale des Impôts à Fianarantsoa, <br> Durant mon stage au Ministère des Finances en tant que Contrôleur des <br>                       impôts, j'ai exploré les rouages de la fiscalité en examinant des dossiers, <br> vérifiant des déclarations et calculant les impôts des contribuables. Cette  <br> expérience, intégrée à ma formation en licence, a enrichi ma                        compréhension théorique par une immersion pratique essentielle."
+                        "description": "<br> <strong> UN-IT Fianarantsoa </strong> , <br> Pendant mon stage à UN-IT FIanarantsoa en tant que développeur junior, <br> j'ai créé une appli web pour la vente de billets et une app mobile pour le <br>  scan à l'entrée. Ces réalisations ont été cruciales pour valider mon diplôme <br>  de licence en info, enrichissant ma formation théorique par une expérience <br> pratique approfondie. <br><br> <strong>  Direction Régionale des Impôts à Fianarantsoa, </strong> <br> Durant mon stage au Ministère des Finances en tant que Contrôleur des <br>                       impôts, j'ai exploré les rouages de la fiscalité en examinant des dossiers, <br> vérifiant des déclarations et calculant les impôts des contribuables. Cette  <br> expérience, intégrée à ma formation en licence, a enrichi ma                        compréhension théorique par une immersion pratique essentielle."
                     },
                     "hard-skills": {
                         "title": "hard-skills",
@@ -36,7 +36,7 @@
                     },
                     "education": {
                         "title": "education",
-                        "description": "<br>I have always been passionate about lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+                        "description": "<br> <u>Mes parcours </u> :   <br><br> 2020 - 2023 =>  <br> EMIT (Ecole de Management et d'Innovation Technologique) Fianarantsoa <br><br>   - <strong>Troisième année de licence</strong> <br> <i>Technologies avancées et Frameworks </i> : Exploration approfondie des technologies émergentes et des frameworks utilisés dans le domaine de l'informatique. <br> <i> Stage de 3 mois et Mémoire de fin d'études </i> :  Intégration des connaissances acquises dans un cadre professionnel, développement de compétences pratiques, et rédaction d'un mémoire de fin d'études portant sur une problématique innovante du domaine informatique. <br><br>   - <strong> Deuxième année de licence </strong> <br> <i> Programmation et Programmation Orientée Objet (POO)  </i>:  Découverte des langages de programmation et leur utilisation dans un contexte orienté objet. Apprentissage pratique à travers des projets. <br> <i>Stage de 2 mois</i> : Application des connaissances acquises dans un environnement professionnel, renforçant la compréhension des langages de programmation et du développement logiciel. <br><br> - <strong> Première année de licence </strong> <br> <i> Bases de l'informatique  </i> : Apprentissage des concepts fondamentaux, notamment les systèmes d'exploitation, les algorithmes et les structures de données. <br> <i> Réalisations </i> : Excellente maîtrise des concepts de base de l'informatique. <br><br> 2018 - 2019 => Collège Saint François Xavier Fianarantsoa ( CSFX) <br><br> <strong> Baccalauréat Série D - Mention Assez Bien </strong>",
                         "files": {
                             "high-school": "I have been in 'Las viñas'...",
                             "university": "The university..."
@@ -50,11 +50,11 @@
                 "info": {
                     "sports": {
                         "title": "sports",
-                        "description": "<br>I am an avid sports enthusiast and lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+                        "description": "<br>Je suis un passionné de sport et j'ai une véritable passion pour le basketball, pratiquant régulièrement pour améliorer mes compétences sur le terrain. De plus, je m'adonne à une routine de course à pied le matin, trouvant à la fois la sérénité et l'énergie dans mes sessions de jogging quotidiennes. Ces activités contribuent non seulement à mon bien-être physique, mais elles m'insufflent également discipline et concentration au quotidien."
                     },
                     "favorite-games": {
                         "title": "favorite-games",
-                        "description": "<br>I am a passionate gamer with Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br><br> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                        "description": "<br>Je suis un joueur passionné, trouvant mon équilibre entre la compétitivité de Free Fire, le défi intellectuel des échecs, et l'apaisement dans la musique. Free Fire m'immerge dans des batailles en ligne stimulantes, les échecs me poussent à exercer ma réflexion stratégique, tandis que la musique me permet de me détendre et de trouver de l'inspiration. Ces activités sont pour moi des échappatoires relaxantes, m'offrant un équilibre parfait entre défis ludiques et moments de détente."
                     }
                 }
             }
@@ -122,45 +122,45 @@
     },
     "projects": {
         "1": {
-            "title": "_ui-animations",
-            "description": "Duis aute irure dolor in velit esse cillum dolore.",
-            "img": "/images/projects/ui-animations2.png",
-            "tech": ["Flutter"],
+            "title": "EventPass",
+            "description": "Une plateforme web gère la vente de billets pour les événements, tandis qu'une app mobile dédiée au scan assure l'accès à ces événements via les codes QR.",
+            "img": "/mia.png",
+            "tech": ["NuxtJs"],
             "url": "https://github.com/"
         },
         "2": {
-            "title": "_ai-resources",
-            "description": "Duis aute irure dolor in velit esse cillum dolore.",
-            "img": "/images/projects/ai-resources.png",
-            "tech": ["Gatsby"],
+            "title": "SymfonyCuisine",
+            "description": "Mon projet Symfony permet de créer et partager des recettes en utilisant divers ingrédients de manière flexible entre plusieurs créateurs.",
+            "img": "/trinity.png",
+            "tech": ["Symfony"],
             "url": "https://github.com/"
         },
         "3": {
-            "title": "_worldmap",
-            "description": "Duis aute irure dolor in velit esse cillum dolore.",
-            "img": "/images/projects/worldmap.png",
-            "tech": ["Angular"],
+            "title": "KimLogement",
+            "description":"Une app web pour ventes immobilières : l'admin valide les comptes des agents. Ces agents postent des maisons à vendre et les clients peuvent consulter et acheter.",
+            "img": "/estate.png",
+            "tech": ["Laravel"],
             "url": "https://github.com/"
         },
         "4": {
-            "title": "_ui-animations",
-            "description": "Duis aute irure dolor in velit esse cillum dolore.",
-            "img": "/images/projects/ui-animations.png",
-            "tech": ["React"],
+            "title": "E-Commerce",
+            "description":"Une app mobile dédiée à la vente de fournitures tech, offrant une large gamme de produits technologiques pour les passionnés de tech et les utilisateurs à la recherche d'articles high-tech.",
+            "img": "/appVente.png",
+            "tech": ["Flutter"],
             "url": "https://github.com/"
         },
         "5": {
-            "title": "_tetris-game",
-            "description": "Duis aute irure dolor in velit esse cillum dolore.",
-            "img": "/images/projects/tetris-game.png",
-            "tech": ["React"],
+            "title": "DeclarImpot",
+            "description":"Une application web pour déclarer ses impôts en ligne de manière efficace et simple.",
+            "img": "/impot.png",
+            "tech": ["Laravel"],
             "url": "https://github.com/"
         },
         "6": {
-            "title": "_ethereum",
-            "description": "Duis aute irure dolor in velit esse cillum dolore.",
+            "title": "Coming Soon",
+            "description": "Coming Soon",
             "img": "/images/projects/ethereum.png",
-            "tech": ["Vue"],
+            "tech": ["NuxtJs"],
             "url": "https://github.com/"
         }
     }
