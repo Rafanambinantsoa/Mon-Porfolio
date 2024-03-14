@@ -93,25 +93,25 @@
         "find_me_also_in": {
             "title": "find-me-also-in",
             "sources": {
-                "youtube": {
-                    "title": "YouTube channel",
-                    "url": "https://www.youtube.com/",
-                    "user": "username"
+                "linkedin": {
+                    "title": "Linkdein profile",
+                    "url": "rafanambinantsoa-kim-5a5508279",
+                    "user": ""
                 },
-                "gurushots": {
-                    "title": "GuruShots profile",
-                    "url": "https://gurushots.com/",
-                    "user": "username"
+                "github": {
+                    "title": "Github profile",
+                    "url": "https://github.com/",
+                    "user": "Rafanambinantsoa"
                 },
                 "instagram": {
                     "title": "Instagram account",
                     "url": "https://instagram.com/",
                     "user": "akutagawa_karim"
                 },
-                "twitch": {
-                    "title": "Twitch profile",
-                    "url": "https://twitch.com/",
-                    "user": "username"
+                "facebook":{
+                    "title": "Facebook profile",
+                    "url": "https://facebook.com/",
+                    "user": "tsukasa.zeldris"
                 }
             }
         }

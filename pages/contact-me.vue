@@ -2,7 +2,7 @@
     <main id="contact-me" class="page">
 
         <div id="mobile-page-title">
-            <h2>_contact-me</h2>
+            <h2>_me-contacter</h2>
         </div>
 
         <div id="page-menu" class="w-full h-full flex flex-col border-right">
@@ -28,8 +28,7 @@
                 <div class="title" @click="open('find-me-in')">
                     <img class="arrow" src="/icons/arrow.svg">
                     <h3>
-                        find-me-also-in
-                    </h3>
+                        me-trouver-aussi-sur                    </h3>
                 </div>
                 <div id="links">
                     <div v-for="(source, key) in contact.find_me_also_in.sources" :key="key" class="link">

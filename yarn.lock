@@ -4681,6 +4681,11 @@ svgo@^2.7.0:
     picocolors "^1.0.0"
     stable "^0.1.8"
 
+sweetalert2@^11.10.6:
+  version "11.10.6"
+  resolved "https://registry.yarnpkg.com/sweetalert2/-/sweetalert2-11.10.6.tgz#77c55271f786e62ea6710b84893a98c27319b3c9"
+  integrity sha512-CINZPLZXZRSZqSOE7H7j1F7X8e8O1kLOiXPmtJn1DYxvXsKBr3d16d90+IcwTTs7dJww20h8r8QIxIwsLGX+6A==
+
 tailwind-config-viewer@^1.7.2:
   version "1.7.2"
   resolved "https://registry.yarnpkg.com/tailwind-config-viewer/-/tailwind-config-viewer-1.7.2.tgz#3d8242e6ef69d08f388c5dadb40eee62d4ae6386"
@@ -5127,12 +5132,22 @@ vue-devtools-stub@^0.1.0:
   resolved "https://registry.yarnpkg.com/vue-devtools-stub/-/vue-devtools-stub-0.1.0.tgz#a65b9485edecd4273cedcb8102c739b83add2c81"
   integrity sha512-RutnB7X8c5hjq39NceArgXg28WZtZpGc3+J16ljMiYnFhKvd8hITxSWQSQ5bvldxMDU6gG5mkxl1MTQLXckVSQ==
 
+vue-loading-overlay@^6.0:
+  version "6.0.4"
+  resolved "https://registry.yarnpkg.com/vue-loading-overlay/-/vue-loading-overlay-6.0.4.tgz#b136b21d04cb7c4d0ade7e4238c50cd15280e072"
+  integrity sha512-DmMqLjQULk4bJ6C1IyDQzasgxb03KLrcj6nitlMIJkh6np0rQkWpgdu0upS3lJcrF9q+dmrhnU+A8I5pz41bqw==
+
 vue-router@^4.1.6:
   version "4.1.6"
   resolved "https://registry.yarnpkg.com/vue-router/-/vue-router-4.1.6.tgz#b70303737e12b4814578d21d68d21618469375a1"
   integrity sha512-DYWYwsG6xNPmLq/FmZn8Ip+qrhFEzA14EI12MsMgVxvHFDYvlr4NXpVF5hrRH1wVcDP8fGi5F4rxuJSl8/r+EQ==
   dependencies:
     "@vue/devtools-api" "^6.4.5"
+
+vue3-toastify@^0.2.1:
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/vue3-toastify/-/vue3-toastify-0.2.1.tgz#d3999c9f29add53416b0bc23f3ede81cf724b654"
+  integrity sha512-u4i5LCu1q5qs4L4Kbjb4u8NipCS8ox1fCHQ6XFS62676xnA6Q/AJRpZEkAurTMp723LeH6eQX6k9+24bKf1T4Q==
 
 vue@^3.2.45:
   version "3.2.45"

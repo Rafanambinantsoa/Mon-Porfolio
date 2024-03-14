@@ -1,0 +1,17 @@
+Quelque modif a faire 
+
+
+A faire 
+
+
+
+En cours 
+
+
+
+
+Done 
+- Afficheo le message de retour anle  back refa success ou bien fails
+- Refa mi-soummetre le olona de asivo toast genre rah misy diso na tsy ampy
+- Refa valider le izy de  asivo Sweat alert loading jusqu ce que vita le poster message 
+- Quand c'est reponsive les anglais revient  (ataovy francais reny)
