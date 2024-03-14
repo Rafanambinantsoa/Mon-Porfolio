@@ -6,6 +6,7 @@ A faire
 
 
 En cours 
+Apres envoie du message  , vide tous les champs
 
 
 

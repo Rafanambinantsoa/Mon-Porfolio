@@ -108,6 +108,10 @@ export default {
                         body: formData
                     }).then(response => response.json())
                         .then(data => {
+                            //vide tous les champs 
+                            document.querySelector('input[name="name"]').value = "";
+                            document.querySelector('input[name="email"]').value = "";
+                            document.querySelector('textarea[name="message"]').value = "";
                             //close the loader
                             Swal.close();
                             // Traiter la réponse JSON
