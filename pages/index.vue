@@ -6,13 +6,12 @@
     	<div class="css-blurry-gradient-green"></div>
 
 		<section class="hero">
-		
 			<div class="head">
 				<span>
 					Salut à tous, je suis
 				</span>
-				<h1>{{ config.dev.name }}</h1>
-				<h2>> {{ config.dev.role }}</h2>
+				<h1 class="text-2xl text-[#E5E9F0] font-fira_regular lg:text-4xl">{{ config.dev.name }}</h1>
+				<h2> {{ config.dev.role }}</h2>
 			</div>
 
 			<div id="info">
@@ -88,14 +87,14 @@
   font-family: 'Fira Code Retina';
 }
 
-#hello .head h1 {
+/* #hello .head h1 {
   font-size: 58px;
   line-height: 1;
   color: #E5E9F0;
   font-family: 'Fira Code Regular';
-  padding-top: 1rem; /* 16px */
-  padding-bottom: 1rem; /* 16px */
-}
+  padding-top: 1rem; /* 16px 
+  padding-bottom: 1rem; /* 16px 
+} */
 
 #hello .head h2 {
   font-size: 32px;
