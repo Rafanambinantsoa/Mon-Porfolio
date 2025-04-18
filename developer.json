@@ -2,6 +2,7 @@
     "name": "Rafanambinantsoa Karim",
     "logo_name": "rafanambinantsoa-karim",
     "role": "Back-end developer",
+    "role_description": "Je m'appelle Rafanambinantsoa Karim, un développeur backend passionné par la création de systèmes robustes et évolutifs. Mon expertise réside dans la conception d'architectures backend efficaces, garantissant une communication fluide entre le serveur et l'interface utilisateur. Je suis également enthousiaste à l'idée d'explorer le développement mobile pour élargir mes compétences.",
     "about": {
         "sections": {
             "professional-info": {
@@ -25,7 +26,7 @@
             "personal-info": {
                 "title": "personal-info",
                 "icon": "icons/info-personal.svg",
-                "info": { 
+                "info": {
                     "bio": {
                         "title": "bio",
                         "description": "<br> About me <br> j'ai exploré le développement web pendant les deux dernières années, en me concentrant sur la création d'expériences utilisateur intuitives. <br> <br> Récemment, j'ai également commencé à explorer le développement mobile, cherchant à élargir mes horizons dans ce domaine dynamique. <br> Ma maîtrise du développement backend me permet de comprendre en profondeur les systèmes, mais je suis tout aussi enthousiaste à l'idée de m'adapter aux exigences du développement frontend si nécessaire, car je crois fermement à l'importance de la polyvalence dans ce domaine en constante évolution."
@@ -108,7 +109,7 @@
                     "url": "https://instagram.com/",
                     "user": "akutagawa_karim"
                 },
-                "facebook":{
+                "facebook": {
                     "title": "Facebook profile",
                     "url": "https://facebook.com/",
                     "user": "tsukasa.zeldris"
@@ -125,42 +126,54 @@
             "title": "EventPass",
             "description": "Une plateforme web gère la vente de billets pour les événements, tandis qu'une app mobile dédiée au scan assure l'accès à ces événements via les codes QR.",
             "img": "/mia.png",
-            "tech": ["NuxtJs"],
+            "tech": [
+                "NuxtJs"
+            ],
             "url": "https://github.com/"
         },
         "2": {
             "title": "SymfonyCuisine",
             "description": "Mon projet Symfony permet de créer et partager des recettes en utilisant divers ingrédients de manière flexible entre plusieurs créateurs.",
             "img": "/trinity.png",
-            "tech": ["Symfony"],
+            "tech": [
+                "Symfony"
+            ],
             "url": "https://github.com/"
         },
         "3": {
             "title": "KimLogement",
-            "description":"Une app web pour ventes immobilières : l'admin valide les comptes des agents. Ces agents postent des maisons à vendre et les clients peuvent consulter et acheter.",
+            "description": "Une app web pour ventes immobilières : l'admin valide les comptes des agents. Ces agents postent des maisons à vendre et les clients peuvent consulter et acheter.",
             "img": "/estate.png",
-            "tech": ["Laravel"],
+            "tech": [
+                "Laravel"
+            ],
             "url": "https://github.com/"
         },
         "4": {
             "title": "E-Commerce",
-            "description":"Une app mobile dédiée à la vente de fournitures tech, offrant une large gamme de produits technologiques pour les passionnés de tech et les utilisateurs à la recherche d'articles high-tech.",
+            "description": "Une app mobile dédiée à la vente de fournitures tech, offrant une large gamme de produits technologiques pour les passionnés de tech et les utilisateurs à la recherche d'articles high-tech.",
             "img": "/appVente.png",
-            "tech": ["Flutter"],
+            "tech": [
+                "Flutter"
+            ],
             "url": "https://github.com/"
         },
         "5": {
             "title": "DeclarImpot",
-            "description":"Une application web pour déclarer ses impôts en ligne de manière efficace et simple.",
+            "description": "Une application web pour déclarer ses impôts en ligne de manière efficace et simple.",
             "img": "/impot.png",
-            "tech": ["Laravel"],
+            "tech": [
+                "Laravel"
+            ],
             "url": "https://github.com/"
         },
         "6": {
             "title": "Coming Soon",
             "description": "Coming Soon",
             "img": "/images/projects/ethereum.png",
-            "tech": ["NuxtJs"],
+            "tech": [
+                "NuxtJs"
+            ],
             "url": "https://github.com/"
         }
     }
