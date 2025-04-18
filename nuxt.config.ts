@@ -1,7 +1,7 @@
 const config = require('./developer.json');
 const siteTitle = `${config.name} | ${config.role}`;
 const siteDescription = config.role_description;
-const siteUrl = 'https://karimrafanambinantsoa.vercel.app/'; // Remplacez par l'URL de votre site
+const siteUrl = 'https://karimrafanambinantsoa.netlify.app/'; // Remplacez par l'URL de votre site
 const siteImage = `${siteUrl}/demo-share.jpg`; // Remplacez par l'URL de votre image
 
 export default defineNuxtConfig({
@@ -12,7 +12,7 @@ export default defineNuxtConfig({
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
         { hid: 'description', name: 'description', content: siteDescription },
-        { hid: 'keywords', name: 'keywords', content: 'développeur backend, portfolio, Rafanambinantsoa Karim, développement web, développement mobile' },
+        { hid: 'keywords', name: 'keywords', content: 'développeur backend, portfolio, Rafanambinantsoa Karim, développement web, développement mobile, karim, rafanambinantsoa, madagascar, developer, fullstack, web developer, mobile developer, backend developer' },
         { hid: 'author', name: 'author', content: config.name },
 
         // Open Graph
