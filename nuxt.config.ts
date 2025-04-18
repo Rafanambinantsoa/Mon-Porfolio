@@ -15,7 +15,13 @@ export default defineNuxtConfig({
         {
           hid: 'description', name: 'description', content: "Meta TitlesUnique Portfolio: Karim Rafanambinantsoa's Daring Backend DevConfidential Insights: Karim Rafanambinantsoa's Portfolio UncoveredExciting New Portfolio: Karim Rafanambinantsoa, Backend Dev Outstanding Portfolio: Explore Karim Rafanambinantsoa's Dev Journey Powerful Portfolio: Secrets Behind Karim Rafanambinantsoa's Skills Meta Descriptions Discover the unique portfolio of Karim Rafanambinantsoa, a daring backend developer.Uncover his skills and remarkable projects today! Dive into the confidential insights of Karim Rafanambinantsoa's portfolio. Explore his extraordinary journey in backend development now! Explore the exciting new portfolio of Karim Rafanambinantsoa, a talented backend developer.Get inspired by his projects today! Unveil the outstanding portfolio of backend developer Karim Rafanambinantsoa.Learn about his unique skills and contributions to tech! Discover powerful insights into Karim Rafanambinantsoa's developer portfolio. Uncover the secrets to his success in backend development."
         },
-        { hid: 'keywords', name: 'keywords', content: 'développeur backend, portfolio, Rafanambinantsoa Karim, développement web, développement mobile, karim, rafanambinantsoa, madagascar, developer, fullstack, web developer, mobile developer, backend developer' },
+        {
+          hid: 'keywords',
+          name: 'keywords',
+          content: 'portfolio développeur backend Madagascar, Rafanambinantsoa Karim développeur web, compétences développement mobile Madagascar, développeur fullstack PHP professionnel, portefolio web développeur nuxtjs, Rafanambinantsoa portfolio Laravel, développeur backend Madagascar, avis sur le développement web Madagascar, services de développement mobile Karim, expert backend développeur PHP, projets fullstack web Madagascar, carrière de développeur mobile en Madagascar, Rafanambinantsoa compétences techniques, développement web freelance Madagascar, articles sur Laravel et développement backend, développeurs nuxtjs à Madagascar, portfolio de développeur mobile, formations développement web en Madagascar, tendances développement backend 2023, devenez développeur Laravel, exigences pour développeur fullstack, Rafanambinantsoa et technophilie, comparer les frameworks PHP, trouver un développeur web à Madagascar, avantages du développement mobile, projets PHP populaires en développement web, communauté des développeurs à Madagascar, développement mobile avec nuxtjs, freelancing pour développeurs backend, Rafanambinantsoa projets innovants'
+        }
+        ,
+
         { hid: 'author', name: 'author', content: config.name },
 
         // Open Graph
