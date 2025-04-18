@@ -11,7 +11,10 @@ export default defineNuxtConfig({
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-        { hid: 'description', name: 'description', content: siteDescription },
+        { name: 'title', hid: siteTitle, content: "Unique Portfolio: Karim Rafanambinantsoa's Daring Backend Dev" },
+        {
+          hid: 'description', name: 'description', content: "Meta TitlesUnique Portfolio: Karim Rafanambinantsoa's Daring Backend DevConfidential Insights: Karim Rafanambinantsoa's Portfolio UncoveredExciting New Portfolio: Karim Rafanambinantsoa, Backend Dev Outstanding Portfolio: Explore Karim Rafanambinantsoa's Dev Journey Powerful Portfolio: Secrets Behind Karim Rafanambinantsoa's Skills Meta Descriptions Discover the unique portfolio of Karim Rafanambinantsoa, a daring backend developer.Uncover his skills and remarkable projects today! Dive into the confidential insights of Karim Rafanambinantsoa's portfolio. Explore his extraordinary journey in backend development now! Explore the exciting new portfolio of Karim Rafanambinantsoa, a talented backend developer.Get inspired by his projects today! Unveil the outstanding portfolio of backend developer Karim Rafanambinantsoa.Learn about his unique skills and contributions to tech! Discover powerful insights into Karim Rafanambinantsoa's developer portfolio. Uncover the secrets to his success in backend development."
+        },
         { hid: 'keywords', name: 'keywords', content: 'développeur backend, portfolio, Rafanambinantsoa Karim, développement web, développement mobile, karim, rafanambinantsoa, madagascar, developer, fullstack, web developer, mobile developer, backend developer' },
         { hid: 'author', name: 'author', content: config.name },
 
