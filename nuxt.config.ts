@@ -1,7 +1,7 @@
 const config = require('./developer.json');
 const siteTitle = `${config.name} | ${config.role}`;
 const siteDescription = config.role_description;
-const siteUrl = 'https://karimrafanambinantsoa.netlify.app/'; // Remplacez par l'URL de votre site
+const siteUrl = 'https://karimrafanambinantsoa.vercel.app/'; // Remplacez par l'URL de votre site
 const siteImage = `${siteUrl}/demo-share.jpg`; // Remplacez par l'URL de votre image
 
 export default defineNuxtConfig({
