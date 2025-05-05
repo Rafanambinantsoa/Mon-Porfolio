@@ -15,6 +15,8 @@
         <h2> {{ config.dev.role }}</h2>
       </div>
 
+
+
       <div id="info">
         <span :class="{ hide: isMobile }">
           // Vous pouvez également me suivre sur ma page Github.
