@@ -1,4 +1,5 @@
 <template>
+  <meta name="google-site-verification" content="g57-LoHOA_yqiP5MVvFzuzLm6vC9bmwW_04PNxzLAbw" />
   <main v-if="!loading" id="hello">
 
     <!-- gradients -->
