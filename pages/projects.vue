@@ -253,37 +253,11 @@ input[type="checkbox"]:focus {
 }
 </style>
 
-<script setup>
-const config = useRuntimeConfig()
-
-useHead({
-  title: 'Projets | RAFANAMBINANTSOA Maminirina Karim',
-  meta: [
-    { name: 'description', content: 'Découvrez mes projets en développement web - Portfolio de réalisations en NuxtJS, Laravel, Flutter et Symfony' },
-    {
-      name: 'keywords',
-      content: 'RAFANAMBINANTSOA Maminirina Karim, développeur full stack, développeur web, portfolio développeur, projets web, applications mobiles, NuxtJS, Vue.js, Laravel, Symfony, Flutter, JavaScript, TypeScript, Node.js, API REST, frontend, backend, mobile developer, ingénieur logiciel, développement web, développement mobile, technologies web, intégration web, responsive design, UI/UX'
-    },
-
-    { name: 'author', content: 'RAFANAMBINANTSOA Maminirina Karim' },
-    { property: 'og:title', content: 'Portfolio de Projets | RAFANAMBINANTSOA Maminirina Karim' },
-    { property: 'og:description', content: 'Explorez mes réalisations en développement web et applications mobiles' },
-    { property: 'og:type', content: 'website' },
-    { property: 'og:url', content: 'https://karimrafanambinantsoa.vercel.app/projects' },
-    { name: 'robots', content: 'index, follow' },
-    { name: 'language', content: 'French' }
-  ],
-  link: [
-    { rel: 'canonical', href: 'https://karimrafanambinantsoa.vercel.app/projects' }
-  ]
-})
-</script>
-
 <script>
+import developerData from '~/developer.json'
+
 export default {
   setup() {
-    const config = useRuntimeConfig()
-
     useHead({
       title: 'Rafanambinantsoa Maminirina Karim - Projets',
       meta: [
@@ -318,10 +292,6 @@ export default {
         lang: 'fr'
       }
     })
-
-    return {
-      config
-    }
   },
   data() {
     return {
@@ -332,7 +302,7 @@ export default {
     };
   },
   mounted() {
-    this.projects = this.config.public.dev.projects;
+    this.projects = developerData.projects;
     this.loading = false;
   },
   methods: {
@@ -349,7 +319,7 @@ export default {
         this.filters = this.filters.filter((item) => item !== tech); // remove tech from filters
         this.filters.length === 0 ? this.filters.push('all') : null; // add 'all' to filters if filters is empty
       }
-      this.filters[0] == 'all' ? this.projects = this.config.public.dev.projects : this.projects = this.filterProjectsBy(this.filters);
+      this.filters[0] == 'all' ? this.projects = developerData.projects : this.projects = this.filterProjectsBy(this.filters);
 
       if (this.projects.length === 0) {
         // set flex to projects-case
@@ -374,7 +344,7 @@ export default {
      * @param {*} filters is an array with techs names.
      */
     filterProjectsBy(filters) {
-      const projectArray = Object.values(this.config.public.dev.projects);
+      const projectArray = Object.values(developerData.projects);
       return projectArray.filter(project => {
         return filters.some(filter => project.tech.includes(filter)); // change here your condition 'some' or 'every'
       });
