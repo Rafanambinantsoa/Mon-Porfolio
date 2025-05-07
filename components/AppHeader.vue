@@ -1,37 +1,36 @@
 <template>
-    <header id="navbar" class="w-full hidden lg:flex flex-col">
-      <nav class="w-full flex justify-between border-bot">
+  <header id="navbar" class="w-full hidden lg:flex flex-col">
+    <nav class="w-full flex justify-between border-bot">
 
-          <div class="flex">
-            <NuxtLink id="nav-logo" to="/">
-              {{ config.dev.logo_name }}
-            </NuxtLink>
+      <div class="flex">
+        <NuxtLink id="nav-logo" to="/">
+          {{ config.dev.logo_name }}
+        </NuxtLink>
 
-            <NuxtLink id="nav-link" to="/" :class="{ active: isActive('/') }">
-              _hello
-            </NuxtLink>
-  
-            <NuxtLink id="nav-link" to="/about-me" :class="{ active: isActive('/about-me') }">
-              _a_propos_de_moi
-            </NuxtLink>
-  
-            <NuxtLink id="nav-link" to="/projects" :class="{ active: isActive('/projects') }">
-              _projets
-            </NuxtLink>
-          </div>
+        <NuxtLink id="nav-link" to="/" :class="{ active: isActive('/') }">
+          _hello
+        </NuxtLink>
 
-          <NuxtLink id="nav-link-contact" to="/contact-me" :class="{ active: isActive('/contact-me')}">
-            _me_contacter
-          </NuxtLink>
-      
-      </nav>
+        <NuxtLink id="nav-link" to="/about-me" :class="{ active: isActive('/about-me') }">
+          _a_propos_de_moi
+        </NuxtLink>
 
-    </header>
+        <NuxtLink id="nav-link" to="/projects" :class="{ active: isActive('/projects') }">
+          _projets
+        </NuxtLink>
+      </div>
+
+      <NuxtLink id="nav-link-contact" to="/contact-me" :class="{ active: isActive('/contact-me') }">
+        _me_contacter
+      </NuxtLink>
+
+    </nav>
+
+  </header>
 
 </template>
 
 <style>
-
 #nav-link {
   border-right: 1px solid #1E2D3D;
   @apply text-menu-text font-fira_retina px-6 h-full flex items-center;
@@ -42,7 +41,8 @@
   @apply text-menu-text font-fira_retina px-6 h-full flex items-center;
 }
 
-#nav-link:hover, #nav-link-contact:hover {
+#nav-link:hover,
+#nav-link-contact:hover {
   background-color: #1e2d3d74;
   color: white;
 }
@@ -57,7 +57,8 @@
   color: white;
 }
 
-#nav-link.router-link-active, #nav-link-contact.router-link-active {
+#nav-link.router-link-active,
+#nav-link-contact.router-link-active {
   border-bottom: 2px solid #FEA55F;
   color: white;
 }
@@ -68,11 +69,10 @@
   @apply text-menu-text;
 }
 
-#navbar > nav {
+#navbar>nav {
   height: 45px;
   font-size: 13px;
 }
-
 </style>
 
 <script>

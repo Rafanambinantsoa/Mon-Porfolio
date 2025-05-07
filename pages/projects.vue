@@ -253,6 +253,32 @@ input[type="checkbox"]:focus {
 }
 </style>
 
+<script setup>
+const config = useRuntimeConfig()
+
+useHead({
+  title: 'Projets | RAFANAMBINANTSOA Maminirina Karim',
+  meta: [
+    { name: 'description', content: 'Découvrez mes projets en développement web - Portfolio de réalisations en NuxtJS, Laravel, Flutter et Symfony' },
+    {
+      name: 'keywords',
+      content: 'RAFANAMBINANTSOA Maminirina Karim, développeur full stack, développeur web, portfolio développeur, projets web, applications mobiles, NuxtJS, Vue.js, Laravel, Symfony, Flutter, JavaScript, TypeScript, Node.js, API REST, frontend, backend, mobile developer, ingénieur logiciel, développement web, développement mobile, technologies web, intégration web, responsive design, UI/UX'
+    },
+
+    { name: 'author', content: 'RAFANAMBINANTSOA Maminirina Karim' },
+    { property: 'og:title', content: 'Portfolio de Projets | RAFANAMBINANTSOA Maminirina Karim' },
+    { property: 'og:description', content: 'Explorez mes réalisations en développement web et applications mobiles' },
+    { property: 'og:type', content: 'website' },
+    { property: 'og:url', content: 'https://karimrafanambinantsoa.vercel.app/projects' },
+    { name: 'robots', content: 'index, follow' },
+    { name: 'language', content: 'French' }
+  ],
+  link: [
+    { rel: 'canonical', href: 'https://karimrafanambinantsoa.vercel.app/projects' }
+  ]
+})
+</script>
+
 <script>
 export default {
   setup() {

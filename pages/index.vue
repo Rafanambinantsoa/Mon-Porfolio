@@ -1,4 +1,5 @@
 <template>
+  <meta name="google-site-verification" content="g57-LoHOA_yqiP5MVvFzuzLm6vC9bmwW_04PNxzLAbw" />
   <main v-if="!loading" id="hello">
 
     <!-- gradients -->
@@ -13,6 +14,7 @@
         <h1 class="text-2xl text-[#E5E9F0] font-fira_regular lg:text-4xl">{{ config.dev.name }}</h1>
         <h2> {{ config.dev.role }}</h2>
       </div>
+
 
       <div id="info">
         <span :class="{ hide: isMobile }">
@@ -287,6 +289,32 @@
   }
 }
 </style>
+
+<script setup>
+const config = useRuntimeConfig()
+
+useHead({
+  title: 'RAFANAMBINANTSOA Maminirina Karim | Développeur Full Stack',
+  meta: [
+    { name: 'description', content: 'Portfolio de RAFANAMBINANTSOA Maminirina Karim - Développeur Full Stack passionné par la création d\'applications web modernes et performantes' },
+    {
+      name: 'keywords',
+      content: 'RAFANAMBINANTSOA Maminirina Karim, développeur full stack, développeur web, portfolio développeur, développement web, développement mobile, Vue.js, NuxtJS, JavaScript, TypeScript, Flutter, Laravel, Symfony, Node.js, API REST, frontend, backend, ingénieur logiciel, web app, application mobile, UI/UX, responsive design'
+    },
+
+    { name: 'author', content: 'RAFANAMBINANTSOA Maminirina Karim' },
+    { property: 'og:title', content: 'RAFANAMBINANTSOA Maminirina Karim - Portfolio' },
+    { property: 'og:description', content: 'Développeur Full Stack spécialisé en Vue.js et technologies web modernes' },
+    { property: 'og:type', content: 'website' },
+    { property: 'og:url', content: 'https://karimrafanambinantsoa.vercel.app/' },
+    { name: 'robots', content: 'index, follow' },
+    { name: 'language', content: 'French' }
+  ],
+  link: [
+    { rel: 'canonical', href: 'https://karimrafanambinantsoa.vercel.app/' }
+  ]
+})
+</script>
 
 <script>
 export default {

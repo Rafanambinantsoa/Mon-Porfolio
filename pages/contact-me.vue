@@ -79,6 +79,32 @@
     </main>
 </template>
 
+<script setup>
+const contact = useRuntimeConfig().dev.contacts
+
+useHead({
+    title: 'Contact | RAFANAMBINANTSOA Maminirina Karim',
+    meta: [
+        { name: 'description', content: 'Contactez RAFANAMBINANTSOA Maminirina Karim - Développeur Full Stack disponible pour vos projets web et collaborations' },
+        {
+            name: 'keywords',
+            content: 'RAFANAMBINANTSOA Maminirina Karim, contact développeur, développeur freelance, freelance full stack, collaboration projet web, prestataire web, développement web, développement mobile, création de site web, applications web, projets web, développeur indépendant, demande de devis, mission freelance, Vue.js, NuxtJS, Laravel, Flutter, Symfony'
+        },
+
+        { name: 'author', content: 'RAFANAMBINANTSOA Maminirina Karim' },
+        { property: 'og:title', content: 'Contactez RAFANAMBINANTSOA Maminirina Karim' },
+        { property: 'og:description', content: 'Prenez contact pour discuter de vos projets web et collaborations' },
+        { property: 'og:type', content: 'website' },
+        { property: 'og:url', content: 'https://karimrafanambinantsoa.vercel.app/contact-me' },
+        { name: 'robots', content: 'index, follow' },
+        { name: 'language', content: 'French' }
+    ],
+    link: [
+        { rel: 'canonical', href: 'https://karimrafanambinantsoa.vercel.app/contact-me' }
+    ]
+})
+</script>
+
 <script>
 export default {
     data() {

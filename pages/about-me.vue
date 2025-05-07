@@ -380,3 +380,29 @@ export default {
   }
 }
 </script>
+
+<script setup>
+const config = useRuntimeConfig()
+
+useHead({
+  title: 'À propos | RAFANAMBINANTSOA Maminirina Karim',
+  meta: [
+    { name: 'description', content: 'Découvrez mon parcours, mes compétences et mon expérience en tant que développeur Full Stack. Spécialisé en Vue.js, Node.js et technologies web modernes.' },
+    {
+      name: 'keywords',
+      content: 'RAFANAMBINANTSOA Maminirina Karim, développeur full stack, parcours professionnel développeur, expérience tech, compétences développeur web, stack technique, expertise web, frontend, backend, développement web, développement mobile, technologies web, Vue.js, NuxtJS, JavaScript, Laravel, Symfony, Flutter, Node.js, API REST, ingénieur logiciel, formation développeur'
+    },
+
+    { name: 'author', content: 'RAFANAMBINANTSOA Maminirina Karim' },
+    { property: 'og:title', content: 'À propos | RAFANAMBINANTSOA Maminirina Karim' },
+    { property: 'og:description', content: 'Parcours, compétences et expertise en développement Full Stack' },
+    { property: 'og:type', content: 'profile' },
+    { property: 'og:url', content: 'https://karimrafanambinantsoa.vercel.app/about-me' },
+    { name: 'robots', content: 'index, follow' },
+    { name: 'language', content: 'French' }
+  ],
+  link: [
+    { rel: 'canonical', href: 'https://karimrafanambinantsoa.vercel.app/about-me' }
+  ]
+})
+</script>
