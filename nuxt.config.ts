@@ -5,6 +5,10 @@ const siteUrl = 'https://karimrafanambinantsoa.vercel.app/'; // Remplacez par l'
 const siteImage = `${siteUrl}/demo-share.jpg`; // Remplacez par l'URL de votre image
 
 export default defineNuxtConfig({
+  ssr: true,
+  nitro: {
+    preset: 'vercel'
+  },
   app: {
     head: {
       title: siteTitle,
