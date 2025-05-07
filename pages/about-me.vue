@@ -297,6 +297,42 @@ export default {
    */
   setup() {
     const config = useRuntimeConfig()
+
+    useHead({
+      title: 'Rafanambinantsoa Maminirina Karim - À propos de moi',
+      meta: [
+        {
+          name: 'description',
+          content: 'En savoir plus sur Rafanambinantsoa Maminirina Karim - Parcours, compétences et expériences en développement web fullstack'
+        },
+        {
+          name: 'keywords',
+          content: 'Rafanambinantsoa Maminirina Karim, expérience développeur, compétences techniques, javascript, vue.js, nuxt.js, node.js, frontend developer, backend developer, parcours professionnel, formation développeur, projets web, architecture logicielle, développement agile, clean code, performance web'
+        },
+        {
+          property: 'og:title',
+          content: 'Rafanambinantsoa Maminirina Karim - À propos de moi'
+        },
+        {
+          property: 'og:description',
+          content: 'Découvrez mon parcours, mes compétences et mon expérience en développement web fullstack'
+        },
+        { property: 'og:type', content: 'website' },
+        { name: 'twitter:card', content: 'summary_large_image' },
+        {
+          name: 'twitter:title',
+          content: 'Rafanambinantsoa Maminirina Karim - À propos de moi'
+        },
+        {
+          name: 'twitter:description',
+          content: 'Découvrez mon parcours, mes compétences et mon expérience en développement web fullstack'
+        }
+      ],
+      htmlAttrs: {
+        lang: 'fr'
+      }
+    })
+
     return {
       config
     }

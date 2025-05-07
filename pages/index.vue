@@ -16,7 +16,6 @@
       </div>
 
 
-
       <div id="info">
         <span :class="{ hide: isMobile }">
           // Vous pouvez également me suivre sur ma page Github.
@@ -322,6 +321,42 @@ export default {
   name: 'Hello',
   setup() {
     const config = useRuntimeConfig()
+
+    useHead({
+      title: 'Rafanambinantsoa Maminirina Karim - Portfolio',
+      meta: [
+        {
+          name: 'description',
+          content: 'Portfolio de Rafanambinantsoa Maminirina Karim - Développeur web fullstack passionné par la création d\'applications web modernes et performantes'
+        },
+        {
+          name: 'keywords',
+          content: 'Rafanambinantsoa Maminirina Karim, développeur fullstack, javascript, vue.js, nuxt.js, node.js, développement web, frontend, backend, portfolio développeur, web development, responsive design, applications web, programmation, coding, software engineer'
+        },
+        {
+          property: 'og:title',
+          content: 'Rafanambinantsoa Maminirina Karim - Portfolio Développeur Fullstack'
+        },
+        {
+          property: 'og:description',
+          content: 'Découvrez le portfolio de Rafanambinantsoa Maminirina Karim, développeur web fullstack'
+        },
+        { property: 'og:type', content: 'website' },
+        { name: 'twitter:card', content: 'summary_large_image' },
+        {
+          name: 'twitter:title',
+          content: 'Rafanambinantsoa Maminirina Karim - Portfolio Développeur Fullstack'
+        },
+        {
+          name: 'twitter:description',
+          content: 'Découvrez le portfolio de Rafanambinantsoa Maminirina Karim, développeur web fullstack'
+        }
+      ],
+      htmlAttrs: {
+        lang: 'fr'
+      }
+    })
+
     return {
       config
     }

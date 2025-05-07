@@ -283,6 +283,42 @@ useHead({
 export default {
   setup() {
     const config = useRuntimeConfig()
+
+    useHead({
+      title: 'Rafanambinantsoa Maminirina Karim - Projets',
+      meta: [
+        {
+          name: 'description',
+          content: 'Découvrez les projets de développement web réalisés par Rafanambinantsoa Maminirina Karim - Portfolio de réalisations techniques'
+        },
+        {
+          name: 'keywords',
+          content: 'Rafanambinantsoa Maminirina Karim, projets web, portfolio développeur, NuxtJS, Laravel, Flutter, Symfony, développement fullstack, applications web, projets techniques, réalisations développeur, expertise web'
+        },
+        {
+          property: 'og:title',
+          content: 'Rafanambinantsoa Maminirina Karim - Portfolio de Projets'
+        },
+        {
+          property: 'og:description',
+          content: 'Explorez mes projets de développement web et applications'
+        },
+        { property: 'og:type', content: 'website' },
+        { name: 'twitter:card', content: 'summary_large_image' },
+        {
+          name: 'twitter:title',
+          content: 'Rafanambinantsoa Maminirina Karim - Portfolio de Projets'
+        },
+        {
+          name: 'twitter:description',
+          content: 'Explorez mes projets de développement web et applications'
+        }
+      ],
+      htmlAttrs: {
+        lang: 'fr'
+      }
+    })
+
     return {
       config
     }

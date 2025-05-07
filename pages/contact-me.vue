@@ -117,6 +117,41 @@ export default {
     setup() {
         const contact = useRuntimeConfig().dev.contacts
 
+        useHead({
+            title: 'Rafanambinantsoa Maminirina Karim - Contact',
+            meta: [
+                {
+                    name: 'description',
+                    content: 'Contactez Rafanambinantsoa Maminirina Karim - Développeur web fullstack disponible pour vos projets'
+                },
+                {
+                    name: 'keywords',
+                    content: 'Rafanambinantsoa Maminirina Karim, contact développeur, freelance, projets web, développement sur mesure, consultation technique, devis développement web, collaboration, contact professionnel, expertise technique, développement agile'
+                },
+                {
+                    property: 'og:title',
+                    content: 'Rafanambinantsoa Maminirina Karim - Contactez-moi'
+                },
+                {
+                    property: 'og:description',
+                    content: 'Prenez contact pour discuter de vos projets de développement web'
+                },
+                { property: 'og:type', content: 'website' },
+                { name: 'twitter:card', content: 'summary_large_image' },
+                {
+                    name: 'twitter:title',
+                    content: 'Rafanambinantsoa Maminirina Karim - Contact'
+                },
+                {
+                    name: 'twitter:description',
+                    content: 'Prenez contact pour discuter de vos projets de développement web'
+                }
+            ],
+            htmlAttrs: {
+                lang: 'fr'
+            }
+        })
+
         return {
             contact
         }
