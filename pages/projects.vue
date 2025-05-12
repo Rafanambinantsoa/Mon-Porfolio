@@ -259,7 +259,7 @@ import developerData from '~/developer.json'
 export default {
   setup() {
     useHead({
-      title: 'Rafanambinantsoa Maminirina Karim - Projets',
+      title: 'Projets | Rafanambinantsoa Maminirina Karim ',
       meta: [
         {
           name: 'description',
@@ -297,16 +297,27 @@ export default {
     return {
       techs: ['NuxtJs', 'Laravel', 'Flutter', 'Symfony'],
       filters: ['all'],
-      projects: '',
+      projects: {},
       loading: true,
     };
   },
-  mounted() {
-    this.projects = developerData.projects;
-    this.loading = false;
+  async created() {
+    try {
+      this.loading = true;
+      this.projects = developerData.projects || {};
+      if (!this.projects || Object.keys(this.projects).length === 0) {
+        console.error('No projects data available');
+      }
+    } catch (error) {
+      console.error('Error loading projects:', error);
+      this.projects = {};
+    } finally {
+      this.loading = false;
+    }
   },
   methods: {
     filterProjects(tech) {
+      if (!this.projects) return;
 
       document.getElementById('icon-tech-' + tech).classList.toggle('active'); // change tech icon opacity
       document.getElementById('title-tech-' + tech).classList.toggle('active'); // change tech text color
@@ -344,6 +355,7 @@ export default {
      * @param {*} filters is an array with techs names.
      */
     filterProjectsBy(filters) {
+      if (!developerData.projects) return [];
       const projectArray = Object.values(developerData.projects);
       return projectArray.filter(project => {
         return filters.some(filter => project.tech.includes(filter)); // change here your condition 'some' or 'every'
