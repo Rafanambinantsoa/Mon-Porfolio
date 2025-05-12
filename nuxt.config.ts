@@ -7,7 +7,7 @@ const siteImage = `${siteUrl}/demo-share.jpg`; // Remplacez par l'URL de votre i
 export default defineNuxtConfig({
   ssr: true,
   nitro: {
-    preset: 'vercel'
+    preset: 'static'
   },
   app: {
     head: {
