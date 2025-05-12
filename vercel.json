@@ -1,12 +1,5 @@
 {
     "version": 2,
-    "builds": [
-        {
-            "src": "package.json",
-            "use": "@vercel/node@2",
-            "config": {
-                "runtime": "nodejs18.x"
-            }
-        }
-    ]
+    "buildCommand": "yarn generate",
+    "outputDirectory": ".output/public"
 }
