@@ -257,6 +257,42 @@ input[type="checkbox"]:focus {
 import developerData from '~/developer.json'
 
 export default {
+  setup() {
+    useHead({
+      title: 'Projets | Rafanambinantsoa Maminirina Karim ',
+      meta: [
+        {
+          name: 'description',
+          content: 'Découvrez les projets de développement web réalisés par Rafanambinantsoa Maminirina Karim - Portfolio de réalisations techniques'
+        },
+        {
+          name: 'keywords',
+          content: 'Rafanambinantsoa Maminirina Karim, projets web, portfolio développeur, NuxtJS, Laravel, Flutter, Symfony, développement fullstack, applications web, projets techniques, réalisations développeur, expertise web'
+        },
+        {
+          property: 'og:title',
+          content: 'Rafanambinantsoa Maminirina Karim - Portfolio de Projets'
+        },
+        {
+          property: 'og:description',
+          content: 'Explorez mes projets de développement web et applications'
+        },
+        { property: 'og:type', content: 'website' },
+        { name: 'twitter:card', content: 'summary_large_image' },
+        {
+          name: 'twitter:title',
+          content: 'Rafanambinantsoa Maminirina Karim - Portfolio de Projets'
+        },
+        {
+          name: 'twitter:description',
+          content: 'Explorez mes projets de développement web et applications'
+        }
+      ],
+      htmlAttrs: {
+        lang: 'fr'
+      }
+    })
+  },
   data() {
     return {
       techs: ['NuxtJs', 'Laravel', 'Flutter', 'Symfony'],
@@ -269,6 +305,9 @@ export default {
     try {
       this.loading = true;
       this.projects = developerData.projects || {};
+      if (!this.projects || Object.keys(this.projects).length === 0) {
+        console.error('No projects data available');
+      }
     } catch (error) {
       console.error('Error loading projects:', error);
       this.projects = {};
@@ -324,4 +363,5 @@ export default {
     },
   },
 };
+
 </script>
