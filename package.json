@@ -1,14 +1,15 @@
 {
   "private": true,
   "scripts": {
-    "build": "nuxt build",
+    "build": "NODE_OPTIONS=--max_old_space_size=4096 nuxt build",
     "dev": "nuxt dev",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare",
+    "postinstall": "node -e \"try { require('nuxt/package.json'); process.exit(0) } catch(e) { process.exit(1) }\" || npm i nuxt@3.7.4",
     "start": "node .output/server/index.mjs"
   },
   "devDependencies": {
-    "nuxt": "^3.7.4",
+    "nuxt": "3.7.4",
+    "@nuxt/kit": "3.7.4",
     "vitest": "^0.25.3"
   },
   "dependencies": {
@@ -23,6 +24,9 @@
     "vue3-toastify": "^0.2.1"
   },
   "engines": {
-    "node": "^20.0.0"
+    "node": "20.x"
+  },
+  "overrides": {
+    "klona": "2.0.4"
   }
 }
