@@ -14,16 +14,8 @@ const isVercel = Boolean(process.env.VERCEL)
 
 export default defineNuxtConfig({
   ssr: true,
-  // Pour Nuxt 3 : config Nitro. En local, on veut preset 'node' pour générer .output/
-  // Sur Vercel, on garde preset 'vercel' pour que la plateforme lise .vercel/output
   nitro: {
-    preset: isVercel ? 'vercel' : 'node',
-    // Facultatif : si vous voulez forcer explicitement le dossier de sortie local
-    // note : preset 'node' génère .output par défaut à la racine.
-    // Si vous souhaitez un nom différent, décommentez et ajustez :
-    // output: {
-    //   dir: isVercel ? undefined : '.output' // ou un autre nom
-    // }
+    preset: 'node'
   },
   app: {
     head: {
@@ -78,7 +70,7 @@ export default defineNuxtConfig({
   },
 
   modules: [
-    '@nuxtjs/tailwindcss',
+    '@nuxtjs/tailwindcss'
   ],
 
   components: {
@@ -108,6 +100,14 @@ export default defineNuxtConfig({
     hostname: siteUrl,
     gzip: true,
     routes: [
+      '/',
+      '/about',
+      '/projects',
+      '/contact',
+      // Ajoutez d'autres routes importantes de votre site
+    ],
+  },
+})
       '/',
       '/about',
       '/projects',
