@@ -1,6 +1,7 @@
 {
   "private": true,
   "scripts": {
+    "clean": "rm -rf node_modules .nuxt .output",
     "build": "nuxt generate",
     "dev": "nuxt dev",
     "preview": "nuxt preview",
@@ -8,7 +9,7 @@
     "start": "npx serve .output/public"
   },
   "devDependencies": {
-    "nuxt": "^3.10.0",
+    "nuxt": "^3.8.0",
     "serve": "^14.2.1",
     "vitest": "^0.25.3"
   },
