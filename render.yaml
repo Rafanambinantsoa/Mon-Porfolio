@@ -1,0 +1,8 @@
+services:
+  - type: web
+    name: portfolio
+    buildCommand: ./render-build.sh
+    startCommand: yarn start
+    env:
+      - key: NODE_VERSION
+        value: 18.x
