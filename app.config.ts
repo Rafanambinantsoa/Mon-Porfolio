@@ -12,10 +12,5 @@ export default defineAppConfig({
       colors: {
         primary: '#ff0000'
       }
-    },
-    nitro: {
-      output: {
-        dir: './output/server'
-      }
     }
   })
