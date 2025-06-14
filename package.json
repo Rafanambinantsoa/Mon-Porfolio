@@ -5,10 +5,11 @@
     "dev": "nuxt dev",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "start": "node .output/server/index.mjs"
+    "start": "npx serve .output/public"
   },
   "devDependencies": {
-    "nuxt": "3.0.0", 
+    "nuxt": "^3.10.0",
+    "serve": "^14.2.1",
     "vitest": "^0.25.3"
   },
   "dependencies": {
