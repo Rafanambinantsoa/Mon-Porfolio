@@ -3,14 +3,11 @@
 * https://nuxt.com/docs/getting-started/configuration#app-configuration
 */
 export default defineAppConfig({
-    title: 'Hello Nuxt',
-    blog:{
-      enabled: true,
-    },
-    theme: {
-      dark: true,
-      colors: {
-        primary: '#ff0000'
-      }
+  title: 'Hello Nuxt',
+  theme: {
+    dark: true,
+    colors: {
+      primary: '#ff0000'
     }
-  })
+  }
+})
