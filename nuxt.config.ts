@@ -13,13 +13,14 @@ const siteImage = `${siteUrl}/demo-share.jpg`
 const isVercel = Boolean(process.env.VERCEL)
 
 export default defineNuxtConfig({
-  ssr: true,
-  nitro: {
-    preset: 'node'
-  },
+  ssr: false,
+  target: 'static',
+  modules: [
+    '@nuxtjs/tailwindcss'
+  ],
   app: {
     head: {
-      title: siteTitle,
+      title: 'Mon Portfolio',
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -69,11 +70,10 @@ export default defineNuxtConfig({
     },
   },
 
-  modules: [
-    '@nuxtjs/tailwindcss'
-  ],
-
-  components: {
+  nitro: {
+    preset: 'static'
+  }
+})
     dirs: [
       '~/components',
     ],
