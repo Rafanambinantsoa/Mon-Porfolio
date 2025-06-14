@@ -95,7 +95,7 @@ export default defineNuxtConfig({
     viewer: false,
   },
 
-  runtimeConfig: {
+  runtimeConfig: { 
     apiSecret: '123',
     public: {
       apiBase: '/api',
