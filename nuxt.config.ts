@@ -52,7 +52,7 @@ export default defineNuxtConfig({
       '~/components',
     ],
   },
-  
+
   /**
    * * Tailwind CSS Config
    * Options: https://tailwindcss.nuxt.dev/getting-started/options/
