@@ -10,7 +10,7 @@
       <img class="section-arrow" src="/icons/arrow.svg">
       <p class="font-fira_regular text-white text-sm">projects</p>
     </div>
-    
+
     <div id="filter-menu" class="w-full flex-col border-right font-fira_regular text-menu-text hidden lg:flex">
       <!-- title -->
       <div id="section-content-title" class="hidden lg:flex items-center min-w-full">
@@ -20,10 +20,11 @@
 
       <!-- filter menu -->
       <nav id="filters" class="w-full flex-col">
-  
+
         <div v-for="tech in techs" :key="tech" class="flex items-center py-2">
           <input type="checkbox" :id="tech" @click="filterProjects(tech)">
-          <img :id="'icon-tech-' + tech" :src="'/icons/techs/' + tech.toLowerCase()+'.svg'" alt="" class="tech-icon w-5 h-5 mx-4">
+          <img :id="'icon-tech-' + tech" :src="'/icons/techs/' + tech.toLowerCase() + '.svg'" alt=""
+            class="tech-icon w-5 h-5 mx-4">
           <span :id="'title-tech-' + tech">{{ tech }}</span>
         </div>
       </nav>
@@ -32,26 +33,29 @@
     <!-- content -->
 
     <div class="flex flex-col w-full overflow-hidden">
-      
+
       <!-- windows tab -->
       <div class="tab-height w-full hidden lg:flex border-bot items-center">
         <div class="flex items-center border-right h-full">
-          <p v-for="filter in filters" :key="filter" class="font-fira_regular text-menu-text text-sm px-3">{{ filter }};</p>
+          <p v-for="filter in filters" :key="filter" class="font-fira_regular text-menu-text text-sm px-3">{{ filter }};
+          </p>
           <img src="/icons/close.svg" alt="" class="m-3">
         </div>
       </div>
 
       <!-- windows tab mobile -->
       <div id="tab" class="flex lg:hidden items-center">
-          <span class="text-white"> // </span>
-          <p class="font-fira_regular text-white text-sm px-3">projects</p>
-          <span class="text-menu-text"> / </span>
-          <p v-for="filter in filters" :key="filter" class="font-fira_regular text-menu-text text-sm px-3">{{ filter }};</p>
+        <span class="text-white"> // </span>
+        <p class="font-fira_regular text-white text-sm px-3">projects</p>
+        <span class="text-menu-text"> / </span>
+        <p v-for="filter in filters" :key="filter" class="font-fira_regular text-menu-text text-sm px-3">{{ filter }};
+        </p>
       </div>
 
       <!-- projects -->
       <div id="projects-case" class="grid grid-cols-1 lg:grid-cols-2 max-w-full h-full overflow-scroll lg:self-center">
-        <div id="not-found" class="hidden flex flex-col font-fira_retina text-menu-text my-5 h-full justify-center items-center">
+        <div id="not-found"
+          class="hidden flex flex-col font-fira_retina text-menu-text my-5 h-full justify-center items-center">
           <span class="flex justify-center text-4xl pb-3">
             X__X
           </span>
@@ -75,7 +79,9 @@
           <div id="project-card" class="flex flex-col">
             <div id="window">
               <div class="absolute flex right-3 top-3">
-                <img v-for="tech in project.tech" :key="tech" :src="'/icons/techs/filled/' + tech.toLowerCase() + '.svg'" alt="" class="w-6 h-6 mx-1 hover:opacity-75">
+                <img v-for="tech in project.tech" :key="tech"
+                  :src="'/icons/techs/filled/' + tech.toLowerCase() + '.svg'" alt=""
+                  class="w-6 h-6 mx-1 hover:opacity-75">
               </div>
               <img id="showcase" :src="project.img" alt="" class="">
             </div>
@@ -84,19 +90,19 @@
               <p class="text-menu-text font-fira_retina text-sm mb-5">
                 {{ project.description }}
               </p>
-              <a id="view-button" :href="project.url" target="_blank" class="text-white font-fira_retina py-2 px-4 w-fit text-xs rounded-lg">
-                  view-project
+              <a id="view-button" :href="project.url" target="_blank"
+                class="text-white font-fira_retina py-2 px-4 w-fit text-xs rounded-lg">
+                view-project
               </a>
             </div>
           </div>
         </div>
       </div>
-  </div>
-</main>
+    </div>
+  </main>
 </template>
 
 <style>
-
 #filters {
   padding: 10px 25px;
 }
@@ -214,6 +220,7 @@ input[type="checkbox"]:focus {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     padding: 50px 50px 40px;
   }
+
   #project {
     width: 100%;
     min-width: 100%;
@@ -227,6 +234,7 @@ input[type="checkbox"]:focus {
     padding: 50px 80px 40px;
     /* padding: 100px 100px 40px; */
   }
+
   #project {
     width: 100%;
     min-width: 100%;
@@ -238,6 +246,7 @@ input[type="checkbox"]:focus {
   from {
     transform: translate3d(0, -200px, 0);
   }
+
   to {
     transform: translate3d(0, 10px, 0);
   }
@@ -245,27 +254,70 @@ input[type="checkbox"]:focus {
 </style>
 
 <script>
+import developerData from '~/developer.json'
+
 export default {
   setup() {
-    const config = useRuntimeConfig()
-    return {
-      config
-    }
+    useHead({
+      title: 'Projets | Rafanambinantsoa Maminirina Karim ',
+      meta: [
+        {
+          name: 'description',
+          content: 'Découvrez les projets de développement web réalisés par Rafanambinantsoa Maminirina Karim - Portfolio de réalisations techniques'
+        },
+        {
+          name: 'keywords',
+          content: 'Rafanambinantsoa Maminirina Karim, projets web, portfolio développeur, NuxtJS, Laravel, Flutter, Symfony, développement fullstack, applications web, projets techniques, réalisations développeur, expertise web'
+        },
+        {
+          property: 'og:title',
+          content: 'Rafanambinantsoa Maminirina Karim - Portfolio de Projets'
+        },
+        {
+          property: 'og:description',
+          content: 'Explorez mes projets de développement web et applications'
+        },
+        { property: 'og:type', content: 'website' },
+        { name: 'twitter:card', content: 'summary_large_image' },
+        {
+          name: 'twitter:title',
+          content: 'Rafanambinantsoa Maminirina Karim - Portfolio de Projets'
+        },
+        {
+          name: 'twitter:description',
+          content: 'Explorez mes projets de développement web et applications'
+        }
+      ],
+      htmlAttrs: {
+        lang: 'fr'
+      }
+    })
   },
   data() {
     return {
-      techs: ['NuxtJs','Laravel', 'Flutter' , 'Symfony'],
+      techs: ['NuxtJs', 'Laravel', 'Flutter', 'Symfony'],
       filters: ['all'],
-      projects: '',
+      projects: {},
       loading: true,
     };
   },
-  mounted() {
-    this.projects = this.config.public.dev.projects;
-    this.loading = false;
+  async created() {
+    try {
+      this.loading = true;
+      this.projects = developerData.projects || {};
+      if (!this.projects || Object.keys(this.projects).length === 0) {
+        console.error('No projects data available');
+      }
+    } catch (error) {
+      console.error('Error loading projects:', error);
+      this.projects = {};
+    } finally {
+      this.loading = false;
+    }
   },
   methods: {
     filterProjects(tech) {
+      if (!this.projects) return;
 
       document.getElementById('icon-tech-' + tech).classList.toggle('active'); // change tech icon opacity
       document.getElementById('title-tech-' + tech).classList.toggle('active'); // change tech text color
@@ -278,19 +330,19 @@ export default {
         this.filters = this.filters.filter((item) => item !== tech); // remove tech from filters
         this.filters.length === 0 ? this.filters.push('all') : null; // add 'all' to filters if filters is empty
       }
-      this.filters[0] == 'all' ? this.projects = this.config.public.dev.projects : this.projects = this.filterProjectsBy(this.filters);
+      this.filters[0] == 'all' ? this.projects = developerData.projects : this.projects = this.filterProjectsBy(this.filters);
 
-      if(this.projects.length === 0){
+      if (this.projects.length === 0) {
         // set flex to projects-case
         document.getElementById('projects-case').classList.remove('grid');
         document.getElementById('not-found').classList.remove('hidden');
-        
-      }else{
+
+      } else {
         // set grid to projects-case
         document.getElementById('projects-case').classList.add('grid');
         document.getElementById('not-found').classList.add('hidden');
       }
-      
+
     },
     hiddeSection() {
       document.getElementById('filter-menu').classList.toggle('hidden');
@@ -303,7 +355,8 @@ export default {
      * @param {*} filters is an array with techs names.
      */
     filterProjectsBy(filters) {
-      const projectArray = Object.values(this.config.public.dev.projects);
+      if (!developerData.projects) return [];
+      const projectArray = Object.values(developerData.projects);
       return projectArray.filter(project => {
         return filters.some(filter => project.tech.includes(filter)); // change here your condition 'some' or 'every'
       });

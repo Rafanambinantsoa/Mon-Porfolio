@@ -28,7 +28,7 @@
 
 .swal2-title {
     color: #659ABD;
-        /* Couleur du texte personnalisée */
+    /* Couleur du texte personnalisée */
 }
 </style>
 
@@ -73,59 +73,68 @@ export default {
             console.log(name, email, message);
             //check is the data is not null
             if (name != "" && email != "" && message != "") {
-                //check if the email syntaxe is correct
-                if (email.includes('@') && email.includes('.')) {
-                    // put them on form data
-                    const formData = new FormData();
-                    formData.append('name', name);
-                    formData.append('email', email);
-                    formData.append('message', message);
+                if (message.length > 10) {
+                    //check if the email syntaxe is correct
+                    if (email.includes('@') && email.includes('.')) {
+                        // put them on form data
+                        const formData = new FormData();
+                        formData.append('name', name);
+                        formData.append('email', email);
+                        formData.append('message', message);
 
 
-                    //loader mon pote
-                    Swal.fire({
-                        title: "Chargement en cours...",
-                        allowOutsideClick: false,
-                        allowEscapeKey: false,
-                        showConfirmButton: false,
-                        html: `
+                        //loader mon pote
+                        Swal.fire({
+                            title: "Chargement en cours...",
+                            allowOutsideClick: false,
+                            allowEscapeKey: false,
+                            showConfirmButton: false,
+                            html: `
                             <div style="display:flex; justify-content:center;">
                                 <img src="/pika.gif" alt="Loading..." />
                             </div>`,
-                        background: 'transparent', // Fond transparent
-                        backdrop: 'rgba(0, 0, 0, 0.5)', // Fond transparent et flou
-                        customClass: {
-                            popup: 'custom-swal-background no-border', // Utiliser la classe de style personnalisée pour la couleur de fond et supprimer la bordure
-                        }
-                    });
-
-
-
-
-                    //post them using fetch post 
-                    fetch('https://porfolio-backend-api.onrender.com/api/sendmail', {
-                        method: 'POST',
-                        body: formData
-                    }).then(response => response.json())
-                        .then(data => {
-                            //vide tous les champs 
-                            document.querySelector('input[name="name"]').value = "";
-                            document.querySelector('input[name="email"]').value = "";
-                            document.querySelector('textarea[name="message"]').value = "";
-                            //close the loader
-                            Swal.close();
-                            // Traiter la réponse JSON
-                            toast(data.message, {
-                                "theme": "auto",
-                                "type": "success",
-                                "transition": "slide",
-                                "dangerouslyHTMLString": true
-                            })
-                            console.log(data); // Affiche les données de la réponse
+                            background: 'transparent', // Fond transparent
+                            backdrop: 'rgba(0, 0, 0, 0.5)', // Fond transparent et flou
+                            customClass: {
+                                popup: 'custom-swal-background no-border', // Utiliser la classe de style personnalisée pour la couleur de fond et supprimer la bordure
+                            }
                         });
-                }
-                else {
-                    toast("Veuillez entrer une adresse email valide", {
+
+
+
+
+                        //post them using fetch post 
+                        fetch('https://porfolio-backend-api.onrender.com/api/sendmail', {
+                            method: 'POST',
+                            body: formData
+                        }).then(response => response.json())
+                            .then(data => {
+                                //vide tous les champs 
+                                document.querySelector('input[name="name"]').value = "";
+                                document.querySelector('input[name="email"]').value = "";
+                                document.querySelector('textarea[name="message"]').value = "";
+                                //close the loader
+                                Swal.close();
+                                // Traiter la réponse JSON
+                                toast(data.message, {
+                                    "theme": "auto",
+                                    "type": "success",
+                                    "transition": "slide",
+                                    "dangerouslyHTMLString": true
+                                })
+                                console.log(data); // Affiche les données de la réponse
+                            });
+                    }
+                    else {
+                        toast("Veuillez entrer une adresse email valide", {
+                            "theme": "auto",
+                            "type": "warning",
+                            "transition": "flip",
+                            "dangerouslyHTMLString": true
+                        })
+                    }
+                } else {
+                    toast("Votre message doit contenir au moins 10 caractères", {
                         "theme": "auto",
                         "type": "warning",
                         "transition": "flip",
